@@ -1,0 +1,12 @@
+# springdemo
+基于springcloud 教程编写的整合项目
+1. 添加服务注册中心eureka-server
+2. 添加服务提供者service-hi
+3. 添加服务消费者rest+ribbon
+4. 服务消费者feign版本
+5. 断路器Hystrix
+6. 路由网关zuul
+7. 配置中心config
+8. 消息总线Bus
+9. 服务链路追踪zipkin
+10 .
