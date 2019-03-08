@@ -1,0 +1,23 @@
+server:
+  port: 8766
+
+eureka:
+  client:
+    service-url:
+      defualtZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: service-zuul
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceID: service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceID: service-feign
+
+main:
+  allow-bean-definition-overriding: true
